@@ -4,22 +4,47 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* DIFFERENT SCROLLBAR FOR TEST PURPOSES */
 
-body {
-    scrollbar-width: 0px;
-}
+/* html, body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  } */
+
+  ::-webkit-scrollbar {
+    height: 8px;
+    width: 0.6vw;
+    /* border: 10px solid #fff; */
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #f26522;
+  }
+
+/* SCROLLBAR DIFFERENCE CODE ENDS */
 
 .hero-section {
     background-image: url('./images/hero-bg-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 99.45vw;
     height: 100vh;
 }
 
 .overlay {
-    width: 100vw;
+    width: 99.45vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -277,7 +302,18 @@ svg * {
 
 .search-bar-and-text {
     max-width: 60vw;
-    margin: 0 auto;
+    margin: 100px auto;
+}
+
+.attractive-text {
+    font-size: 2.8rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.emphasized-text {
+    color: #f26522;
+    font-weight: 300;
 }
 
 @keyframes fadein {
