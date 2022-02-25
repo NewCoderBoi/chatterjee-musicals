@@ -24,12 +24,12 @@
   
   ::-webkit-scrollbar-track {
     border-radius: 0;
-    background: #ffffff;
+    background: #fff;
   }
   
   ::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background: #f26522;
+    background: #f26422a9;
   }
 
 /* SCROLLBAR DIFFERENCE CODE ENDS */
@@ -303,10 +303,15 @@ svg * {
 .search-bar-and-text {
     max-width: 60vw;
     margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
 }
 
 .attractive-text {
-    font-size: 2.8rem;
+    max-width: 50vw;
+    font-size: 2.4rem;
     font-weight: 100;
     text-align: center;
 }
@@ -315,6 +320,31 @@ svg * {
     color: #f26522;
     font-weight: 300;
 }
+
+.search {
+    max-width: 60vw;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-button-bottom {
+    opacity: 0.4;
+}
+
+.search input {
+    border: 0px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.search input::placeholder {
+    opacity: 0.4;
+}
+
+
 
 @keyframes fadein {
     0% {
