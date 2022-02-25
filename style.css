@@ -334,14 +334,38 @@ svg * {
     opacity: 0.4;
 }
 
+.search form {
+    width: 100%;
+}
+
 .search input {
     border: 0px;
     font-size: 1.2rem;
     outline: none;
+    width: 100%;
 }
 
 .search input::placeholder {
     opacity: 0.4;
+}
+
+.popular-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+.heading-text {
+    font-weight: 100;
+    font-size: 3rem;
+    letter-spacing: 1rem;
 }
 
 
