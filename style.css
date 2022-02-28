@@ -360,7 +360,7 @@ svg * {
     align-items: center;
     padding-bottom: 50px;
     margin-bottom: 50px;
-    background-color: rgba(255, 228, 196, 0.671);
+    /* background-color: rgba(255, 228, 196, 0.671); */
 }
 
 .heading {
