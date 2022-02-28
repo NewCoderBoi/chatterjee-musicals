@@ -360,11 +360,13 @@ svg * {
     align-items: center;
     padding-bottom: 50px;
     margin-bottom: 50px;
-    /* background-color: rgba(255, 228, 196, 0.671); */
+    /* background-color: rgba(238, 238, 238, 0.5); */
+    /* max-width: 1500px; */
+    /* width: 100%; */
 }
 
 .heading {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     color: #fff;
     background-color: #000;
     width: 100%;
@@ -382,42 +384,43 @@ svg * {
 }
 
 .products {
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: auto;
 }
 
-
-
 .card img {
-    border-radius: 11px;
-}
-
-.card img:hover {
-    width: 260px;
-    height: 310px;
-    box-shadow: 20px 10px #f26522;
-    /* opacity: 0.75; */
-    filter: brightness(80%);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    /* border-radius: 11px; */
+    /* box-shadow: 0 0 20px#000000; */
     margin-bottom: 15px;
 }
 
+.card img:hover {
+    /* width: 260px;
+    height: 310px; */
+    /* box-shadow: 20px 10px #f26522; */
+    /* opacity: 0.75; */
+    /* filter: brightness(80%); */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #f26522;
+}
+
 .product-info {
-    width: 100%;
+    width: 325px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: #fff;
+    justify-content: space-between;
+    /* background-color: #fff;
     border-radius: 11px;
+    border: 2px solid #000; */
 }
 
 .name-and-price {
-    width: 175px;
-    font-size: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -428,11 +431,11 @@ svg * {
     font-weight: 500;
 }
 
-.add-to-cart {
+/* .add-to-cart {
     width: 50px;
     font-size: 0.75rem;
     text-align: center;
-}
+} */
 
 /* .bg-shop {
     margin-top: 60px;
@@ -450,13 +453,16 @@ svg * {
     font-size: 1rem;
     color: #000;
     max-width: 20vw;
+    font-weight: 500;
+    margin-bottom:200px;
 }
 
-.bg-shop:hover {
+.shop-now:hover {
     cursor: pointer;
-    opacity: 0.85;
-    
-    filter: brightness(80%);
+    color:#f26522;
+    font-size: 1.1rem;
+    /* font-weight: bolder; */
+    /* filter: brightness(80%); */
     transition: all 0.2s ease-in-out;
 }
 
