@@ -355,6 +355,7 @@ svg * {
 }
 
 .popular-products {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -366,7 +367,7 @@ svg * {
 }
 
 .heading {
-    /* margin-top: 50px; */
+    margin-top: 50px;
     color: #fff;
     background-color: #000;
     width: 100%;
@@ -391,28 +392,41 @@ svg * {
     margin: auto;
 }
 
-.card img {
-    /* border-radius: 11px; */
-    /* box-shadow: 0 0 20px#000000; */
-    margin-bottom: 15px;
+.card {
+    box-shadow: 0 0 2px #000;
 }
 
-.card img:hover {
+.card:hover {
+    transition: all 0.1s ease-in-out;
+    /* box-shadow: 0 0 20px #f26522; */
+    box-shadow: 0 0 30px #000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* .card img {
+    /* border-radius: 11px; */
+    /* box-shadow: 0 0 20px#000000; */
+    /* margin-bottom: 15px; */
+/* } */
+
+/* .card img:hover {
     /* width: 260px;
     height: 310px; */
     /* box-shadow: 20px 10px #f26522; */
     /* opacity: 0.75; */
     /* filter: brightness(80%); */
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 20px #f26522;
-}
+    /*cursor: pointer;
+   
+    
+} */
 
 .product-info {
     width: 325px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 10px;
     /* background-color: #fff;
     border-radius: 11px;
     border: 2px solid #000; */
@@ -454,18 +468,52 @@ svg * {
     color: #000;
     max-width: 20vw;
     font-weight: 500;
-    margin-bottom:200px;
+    margin-bottom: 50px;
 }
 
 .shop-now:hover {
     cursor: pointer;
     color:#f26522;
-    font-size: 1.1rem;
     /* font-weight: bolder; */
     /* filter: brightness(80%); */
     transition: all 0.2s ease-in-out;
 }
 
+.motivational-quote {
+    display: flex;
+}
+
+.motivational-quote .image {
+    background-image: url("./images/motivation-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 15vw;
+    margin-bottom: 500px;
+}
+
+.motivational-quote .quote {
+    width: 39.45vw;
+    background-color: #100F0B;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fff;
+    
+}
+
+.motivational-quote .quote .text {
+    /* font-family: "Lobster Two"; */
+    font-size: 2.5rem;
+}
+
+.motivational-quote .quote .by {
+    /* font-family: "Lobster Two"; */
+    margin-right: 15px;
+    font-size: 1rem;
+}
 
 
 @keyframes fadein {
