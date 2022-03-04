@@ -481,6 +481,7 @@ svg * {
 
 .motivational-quote {
     display: flex;
+    margin-bottom: 200px;
 }
 
 .motivational-quote .image {
@@ -489,7 +490,6 @@ svg * {
     background-repeat: no-repeat;
     width: 60vw;
     height: 15vw;
-    margin-bottom: 500px;
 }
 
 .motivational-quote .quote {
@@ -515,6 +515,54 @@ svg * {
     font-size: 1rem;
 }
 
+.our-events {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e2c23;
+    width: 99.45vw;
+    padding-bottom: 40vw;
+}
+
+.event-header-bg {
+    background-color: #fff4c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.event-head-text {
+    font-weight: 100;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    color: #2e2c23;
+}
+
+.images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.squares {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
 
 @keyframes fadein {
     0% {
