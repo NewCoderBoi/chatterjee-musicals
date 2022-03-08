@@ -39,6 +39,10 @@
 
 /* SCROLLBAR DIFFERENCE CODE ENDS */
 
+.body {
+    width: 99.45vw;
+}
+
 .hero-section {
     background-image: url('./images/hero-bg-2.jpg');
     background-size: cover;
@@ -427,7 +431,7 @@ svg * {
 } */
 
 .product-info {
-    width: 325px;
+    width: 20.3125rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -493,12 +497,12 @@ svg * {
     background-image: url("./images/motivation-4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 60vw;
+    width: 50vw;
     height: 15vw;
 }
 
 .motivational-quote .quote {
-    width: 39.45vw;
+    width: 49.45vw;
     background-color: #100F0B;
     height: 15vw;
     display: flex;
@@ -511,7 +515,7 @@ svg * {
 
 .motivational-quote .quote .text {
     /* font-family: "Lobster Two"; */
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .motivational-quote .quote .by {
@@ -566,9 +570,14 @@ svg * {
     transform: translate(-50%, -50%); */
 
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 18.75rem);
     gap: 10px;
 }
+
+/* .image-bg img {
+    width: 18.75rem;
+    height: 12.1875rem;
+} */
 
 .tall-image {
     grid-column: 3 / 4;
@@ -683,5 +692,100 @@ svg * {
 
     100% {
         opacity: 0
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .heading-text {
+        font-size: 3rem;
+    }
+
+    .card img {
+        width: 17rem;
+        height: 19rem;
+    }
+
+    .product-info {
+        width: 17rem;
+        padding: 5px;
+    }
+
+    .motivational-quote .quote .text {
+        /* font-family: "Lobster Two"; */
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .hero-section {
+        background-color: #000;
+        background-image: none;
+        width: 100vw;
+    }
+
+    header {
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .company-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .chatterjee {
+        top: -12rem;
+        font-size: 3.5rem;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .musicals {
+        font-size: 3.5rem;
+        top: -15rem;
+    }
+
+    .scrolling-services {
+        top: 70%;
+        width: 100%;
+    }
+
+    .scroll-bar {
+        position: absolute;
+        bottom: -15%;
+    }
+
+    .body-text {
+        max-width: 70vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .company-name h1 {
+        font-size: 15vw;
+    }
+    .musicals {
+        top: -12rem;
+    }
+    .body-text {
+        max-width: 95vw;
+    }
+
+    .explore-now {
+        max-width: 80vw;
     }
 }
