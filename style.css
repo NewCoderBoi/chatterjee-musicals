@@ -787,12 +787,35 @@ svg * {
 
     .products {
         /* width: 90vw; */
-        display: grid;
+        display: flex;
         flex-direction: column;
         /* justify-content: space-around; */
         align-items: center;
-        gap: 50px;
+        gap: 100px;
         margin: auto;
+    }
+
+    .motivational-quote {
+        display: none;
+    }
+
+    .our-events {
+        display: none;
+    }
+
+    .image-bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .image-bg img {
+        width: 40vw;
+    }
+
+    .tall-image {
+        display: none;
     }
 }
 
@@ -874,5 +897,14 @@ svg * {
     .shop-now {
         max-width: 50vw;
         font-weight: 300;
+    }
+
+    .footer-text {
+        display: none;
+    }
+
+    .icons {
+        width: 70%;
+        justify-content: space-around;
     }
 }
