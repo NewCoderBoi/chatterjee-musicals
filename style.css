@@ -698,7 +698,7 @@ svg * {
 
 @media screen and (max-width: 1100px) {
     .heading-text {
-        font-size: 3rem;
+        font-size: 6vw;
     }
 
     .card img {
@@ -784,6 +784,16 @@ svg * {
     .search {
         max-width: 80vw;
     }
+
+    .products {
+        /* width: 90vw; */
+        display: grid;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+        gap: 50px;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -830,5 +840,39 @@ svg * {
 
     .search input::placeholder {
         font-size: 15px;
+    }
+
+    .heading {
+        min-height: 10vh;
+    }
+
+    .heading-text {
+        font-size: 5.5vw;
+        letter-spacing: 0.60rem;
+    }
+
+    .products {
+        /* width: 90vw; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+        gap: 50px;
+        margin: auto;
+    }
+
+    .card img {
+        width: 14rem;
+        height: 16rem;
+    }
+
+    .product-info {
+        width: 14rem;
+        padding: 5px;
+    }
+
+    .shop-now {
+        max-width: 50vw;
+        font-weight: 300;
     }
 }
