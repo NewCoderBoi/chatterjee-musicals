@@ -774,6 +774,10 @@ svg * {
         max-width: 70vw;
     }
 
+    .vertical-stick {
+        display: none;
+    }
+
     .search-bar-and-text {
         max-width: 80vw;
     }
